@@ -3,6 +3,7 @@ package main
 import (
 	"fmt"
 	"net/http"
+	"time"
 
 	"github.com/achal1304/go-httpclient/gohttp"
 )
@@ -23,6 +24,9 @@ func main() {
 
 func getGithubHttpClient() gohttp.HttpClient {
 	client := gohttp.New()
+
+	client.SetConnectionTimeout(2 * time.Second)
+	client.SetResponseTimeout(50 * time.Millisecond)
 	commonHeader := make(http.Header)
 	commonHeader.Set("Authorization", "Bearer 123_abc")
 
