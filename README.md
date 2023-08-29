@@ -1,8 +1,6 @@
-<<<<<<< HEAD
 # go-httpclient
-A Productive and lightweight http-client in GO
-=======
-# HTTP client library that provides:
+##A Productive and lightweight http-client in GO
+### HTTP client library that provides:
 Fast, reliable and friction-free HTTP connections.
 Support for all HTTP methods: GET, POST, PUT, DELETE, PATCH and more!
 A Concurrency-Safe HTTP client that you can use without worrying about performance.
